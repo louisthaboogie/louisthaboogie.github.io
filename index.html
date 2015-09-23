@@ -3,6 +3,27 @@
 <head>
   <meta charset="utf-8">
   <title>App Demo Louis</title>
+  <script type="text/javascript" src="http://cdn-files.deezer.com/js/min/dz.js"></script> 
+   <script type="text/javascript">
+  DZ.ready(function(sdk_options){
+	console.log('DZ sdk is ready', sdk_options);
+	/*
+	{
+		token : {
+			access_token : {string},
+			expire : {int}
+		},
+		player : {
+			current_track : {track Object described in the api},
+			muted : {boolean}
+			repeat : {'0', '1', '2'},
+			shuffle : {boolean},
+			volume : {int [0-100]},
+		}
+	}
+	*/
+	</script>
+});
 </head>
 <body>
  <p>hello world</p>
