@@ -3,8 +3,19 @@
 <head>
   <meta charset="utf-8">
   <title>App Demo Louis</title>
-  <script type="text/javascript" src="http://cdn-files.deezer.com/js/min/dz.js" async></script> 
-   <script type="text/javascript" async>
+  <script type="text/javascript" src="http://cdn-files.deezer.com/js/min/dz.js"></script> 
+   <script type="text/javascript">
+
+   DZ.init({
+        appId  : '164835',
+        channelUrl : 'http://louisthaboogie.github.io/channel.html',
+        player : {
+            onload : function() {
+                console.log("DZ.init player.onload", arguments);
+            }
+        }
+    });
+   
   DZ.ready(function(sdk_options){
 	console.log('DZ sdk is ready', sdk_options);
 	/*
@@ -27,7 +38,7 @@
 </head>
 <body>
  <h1>Demo app</h1>
- 
+
 <h2>Using DZ.login</h2>
 <p>
 <button class="btn btn-primary" onclick="DZ.login(function(){}, {perms:'manage_library'});">Try ask manage_library</button>
