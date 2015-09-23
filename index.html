@@ -34,6 +34,15 @@
 	}
 	*/
   });
+  
+  function add_to_playlist(){
+  	
+  	DZ.api('playlist/908622995/tracks', 'POST', {songs : "9839103"}, function(response){
+	console.log("My track added to the playlist", response.id);
+        };
+  };      
+});
+  }
 	</script>
 </head>
 <body>
@@ -44,5 +53,7 @@
 <button class="btn btn-primary" onclick="DZ.login(function(){}, {perms:'manage_library, email'});">Try ask manage_library</button>
 <a class="dz-addtoplaylist" data-id="302127"></a>
 </p>
+
+
 </body>
 </html>
