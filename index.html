@@ -3,8 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title>App Demo Louis</title>
-  <script type="text/javascript" src="http://cdn-files.deezer.com/js/min/dz.js"></script> 
-   <script type="text/javascript">
+</head>
+<body>
+
+ <h1>Demo app</h1>
+
+<h2>Using DZ.login</h2>
+<p>
+<button class="btn btn-primary" onclick="DZ.login(function(){}, {perms:'manage_library, email'});">Try ask manage_library</button>
+<a class="dz-addtoplaylist" data-id="302127"></a>
+<button class="btn btn-primary" onclick="add_to_playlist();">add track 9839103 to playlist 908622995</button>
+</p>
+<div id="dz-root"></div>
+<script type="text/javascript" src="http://cdn-files.deezer.com/js/min/dz.js"></script> 
+<script type="text/javascript">
 
    DZ.init({
         appId  : '164835',
@@ -36,7 +48,7 @@
   });
   
   function add_to_playlist(){
-  	
+  	alert()
   	DZ.api('playlist/1386742295/tracks', 'POST', {songs : "9839103"}, function(response){
 	console.log("My track added to the playlist", response.id);
   	});
@@ -44,18 +56,6 @@
   };  
 
 </script>
-</head>
-<body>
- <div id="dz-root"></div>
- <h1>Demo app</h1>
-
-<h2>Using DZ.login</h2>
-<p>
-<button class="btn btn-primary" onclick="DZ.login(function(){}, {perms:'manage_library, email'});">Try ask manage_library</button>
-<a class="dz-addtoplaylist" data-id="302127"></a>
-<button class="btn btn-primary" onclick="add_to_playlist();">add track 9839103 to playlist 908622995</button>
-</p>
-
 
 </body>
 </html>
