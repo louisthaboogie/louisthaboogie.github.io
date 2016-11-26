@@ -1,0 +1,32 @@
+{  
+   "expires":1542766800,
+   "sections":[  
+      {  
+         "title":"Popular Now",
+         "position":"0",
+         "tiles":[  
+            {  
+               "title":"Parks and Recreation",
+               "subtitle":"Pawnee Pony",
+               "display_from":1422766800,
+               "display_until":1425186000,
+               "image_url":"https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/250x250-000000-80-0-0.jpg",
+               "image_ratio":"16by9",
+               "action_data":"{\"videoId\": \"185595-0324\", \"play\": \"true\"}",
+               "is_playable":true,
+               "position":"0"
+            },
+            {  
+               "title":"Star Wars IV (1974)",
+               "display_from":1422766800,
+               "display_until":1425186000,
+               "image_url":"https://cdns-images.dzcdn.net/images/cover/2e018122cb56986277102d2041a592c8/250x250-000000-80-0-0.jpg",
+               "image_ratio":"2by3",
+               "action_data":"{\"videoId\": \"185595-0324\", \"play\": \"false\"}",
+               "is_playable":false,
+               "position":"1"
+            }
+         ]
+      }
+   ]
+}
